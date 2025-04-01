@@ -1,0 +1,14 @@
+﻿namespace COMP003B.LectureActivity3.Views.Shop
+{
+    public class Details
+    {
+        @{
+        ViewData["Title"] = "Product - Create";
+            Layout = "~/Views/Shared/_Layout.cshtml";
+        }
+
+        @model int
+
+        <h2>Product details</h2>
+        <p>This page displays information for Product ID: <strong>@Model.</strong></p>
+}
