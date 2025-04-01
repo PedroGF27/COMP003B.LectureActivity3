@@ -1,0 +1,22 @@
+﻿namespace COMP003B.LectureActivity3.Views.Store
+{
+    public class Search
+    {
+        @{
+    ViewData["Title"] = "Store - Search Product";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+        }
+        @model string
+
+        <h2>Search Results</h2>
+
+        @if (!string.IsNullOrEmpty(Model))
+        {
+            <p>Search term: <strong>@Model</strong></p>
+        }
+        else
+        {
+            <p>No Search category provided</p>
+        }
+    }
+}
