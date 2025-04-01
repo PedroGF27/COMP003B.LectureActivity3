@@ -11,5 +11,11 @@ namespace COMP003B.LectureActivity3.Controllers
 		{
 			return View(id);
 		}
+
+		[HttpGet("product/search")]
+		public IActionResult Search([FromQuery] string category)
+		{
+			return View("Search", category);
+		}
 	}
 }
